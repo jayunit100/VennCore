@@ -1,4 +1,7 @@
-1) ODB errors include 
+This is the core of venn.    
+
+
+---- A note on ODB errors ----
 
 file locks 
 
