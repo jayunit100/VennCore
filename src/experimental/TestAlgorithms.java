@@ -4,11 +4,7 @@ import java.util.LinkedList;
 
 public class TestAlgorithms {
 
-	/**
-	 * 
-	 * 
-	 * 
-	 */
+	
 	public static void main(String[] args)
 	{
 		TestAlgorithms a = new TestAlgorithms();
