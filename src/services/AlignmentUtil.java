@@ -223,32 +223,4 @@ public class AlignmentUtil
 		}
 		return "//start alignmentutil summary\n{\n"+s+"\n}//end summary";
 	}
-
-	public static void main(String[] args)
-	{
-		String main = "AMAALAAAAALAAALAAAAA";
-		AlignmentUtil a =
-			new AlignmentUtil
-			(		
-					new VennMatrix().matrix,
-					-3,
-					main, 
-					new HashSet<Character>(),
-					new String[]  
-					        {
-								"AMAAMAAAALAAAAAAAAAAAM", 
-					            "AAMAAAAAAAALAAAAAAAAA"
-							}
-					
-			);
-		
-		Vector<Float> scores=a.getScoresOrderedByResidue();
-		System.out.println("Done " + scores.size());
-
-		for(int i = 0 ; i < scores.size();i++)
-		{
-			System.out.println(i + " " + scores.get(i));
-		}
-		System.out.println(a);
-	}
 }
